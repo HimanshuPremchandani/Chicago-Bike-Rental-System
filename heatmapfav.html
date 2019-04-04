@@ -1,0 +1,2315 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_c364995da60240bb8c8c318c1379757a {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+    <script src="https://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_c364995da60240bb8c8c318c1379757a" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_c364995da60240bb8c8c318c1379757a = L.map(
+        'map_c364995da60240bb8c8c318c1379757a', {
+        center: [41.881832, -87.623177],
+        zoom: 15,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_d2ffb767a92b4027b123b81f18f93943 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_c364995da60240bb8c8c318c1379757a);
+    
+            var heat_map_506159dd17144aa883a901bb65e94089 = L.heatLayer(
+                [[41.872187, -87.661501]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_05b7f9d10eaa4135826a9e82553f2623 = L.heatLayer(
+                [[41.912133, -87.634656]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_9a3b8b6a21634265b8ab25953c3fe9c7 = L.heatLayer(
+                [[41.9256018819, -87.6537080423]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_2720ba1d6c7f49038757c4400f7b50f1 = L.heatLayer(
+                [[41.911722, -87.626804]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_2da34b24139e4f8ca0499759bbbc91e7 = L.heatLayer(
+                [[41.877245, -87.63936600000002]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_294739e3f59b4c88982c119b800a330e = L.heatLayer(
+                [[41.957921, -87.673567]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_393487d106464d5fa8616aea95f3a107 = L.heatLayer(
+                [[41.867888, -87.623041]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_3cb963285ecd42148ae1e4c537fcc120 = L.heatLayer(
+                [[41.898586651399995, -87.6219152258]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_86499bb39c104e22869aa79325fb403e = L.heatLayer(
+                [[41.886024, -87.624117]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_644c1c5d8cfa499d8e65733cceb4a38a = L.heatLayer(
+                [[41.89227800000001, -87.612043]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_52b956c840824172b509ebc05c7cefc4 = L.heatLayer(
+                [[41.882242, -87.64106600000002]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_fc9152365cb64051bb0a73b9a413abb4 = L.heatLayer(
+                [[41.891072, -87.666611]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_09a55340d0184e349fddeb869240ec22 = L.heatLayer(
+                [[41.956061, -87.668869]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_8a3db8eaa2204fe38f8a9dce75fcc9eb = L.heatLayer(
+                [[41.907993, -87.631501]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_d1c40c73f60644908203b6fdab628427 = L.heatLayer(
+                [[41.922167, -87.638888]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_07da8b796542488a86a7f254dbbf8297 = L.heatLayer(
+                [[41.965485, -87.657238]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_3c32a9a62ee74d5991ca546c2557d0e1 = L.heatLayer(
+                [[41.857813, -87.62455]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_d48ce92a2cd04c3181644ca49fdf7a66 = L.heatLayer(
+                [[41.894448, -87.622663]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_77a36d57ab864a5fbf5e3f40a65731af = L.heatLayer(
+                [[41.897764, -87.642884]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_ec63abbef7d241ec9d032d5f8fb279bf = L.heatLayer(
+                [[41.907993, -87.631501]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_c3f75f91bfa94b0985dd4bb051491573 = L.heatLayer(
+                [[41.79933626261, -87.6009581145]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_4a471b6c51f2409ebb106ad2cd7bf82e = L.heatLayer(
+                [[41.892154, -87.636928]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_c4119208819b4921a0dd4d9500c1d132 = L.heatLayer(
+                [[41.89766, -87.62351]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_5babc121e99d4356bef8ce1f0a0bb588 = L.heatLayer(
+                [[41.858086, -87.651073]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_6342d44e210345e2a5f67a15eda71855 = L.heatLayer(
+                [[41.890573, -87.622072]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_26b31a2b40a740829f881af6a3682086 = L.heatLayer(
+                [[41.97563272521, -87.70141943889999]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_39dee71d49c341e1aa55b6d5d56bb8cd = L.heatLayer(
+                [[41.907993, -87.631501]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_87f0f49b8c3a4ea595671f66eab8621c = L.heatLayer(
+                [[41.882242, -87.64106600000002]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_b8021daab20c41d8bee3fb2496f57848 = L.heatLayer(
+                [[41.886024, -87.624117]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_5a7f31d6c268488ea636238c0705a8bd = L.heatLayer(
+                [[41.929143, -87.649077]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_cd8cf3a5ab934e1f9242468551d09e28 = L.heatLayer(
+                [[41.943739, -87.66402]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_6da1101156ff429c9e8ca3e9b944008b = L.heatLayer(
+                [[41.967094, -87.679028]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_803f8996f1984d7194427d18f4f14e90 = L.heatLayer(
+                [[41.924398819000004, -87.71544103549999]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_c23adc9f05974c9a857635aaa083278d = L.heatLayer(
+                [[41.78509714636, -87.60107276059998]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_33303e3a77b640c68848cf4905b7e0b7 = L.heatLayer(
+                [[41.90331, -87.67695]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_efb39c766c344d9a9918a6f0f366df18 = L.heatLayer(
+                [[41.867227, -87.625961]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_a96b1951e02442abbd2179c04de1372d = L.heatLayer(
+                [[41.888716036, -87.6444478533]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_d8926d35a45b4335931d3d3fd6949dd9 = L.heatLayer(
+                [[41.918084, -87.643749]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_bc8cbaea9ab44df985ef5d59c9df914c = L.heatLayer(
+                [[41.94018, -87.65304]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_e33b468da2454965aa7f761567f73bc8 = L.heatLayer(
+                [[41.915689, -87.6346]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_d6e08ee213444715b1fed16448804d69 = L.heatLayer(
+                [[41.870257, -87.63947399999998]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_35e30c3d18a04dc7bf5365e0cad2b47c = L.heatLayer(
+                [[41.89841768945, -87.68659601639999]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_8d60997308544d21aa813e849434755b = L.heatLayer(
+                [[41.880113, -87.789247]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_f3cbd88cd0fc4edc8e7df71be1b453f9 = L.heatLayer(
+                [[41.8838927658, -87.6246491409]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_1ef1138d9b3f46238e941740131e8bbd = L.heatLayer(
+                [[41.921822, -87.64414000000002]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_758395941645410b95d93ef1f7e66bc8 = L.heatLayer(
+                [[41.926277, -87.630834]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_4b9797ef21374abdba8b41079ddc0aaa = L.heatLayer(
+                [[41.954245, -87.65440600000002]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_7781518432f742408ee0e5773f5a98aa = L.heatLayer(
+                [[41.91844, -87.65222]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_7ba30c7bc7374b79811d1dde920f94f7 = L.heatLayer(
+                [[41.918306, -87.636282]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_cee711560cdd443993bd1ca2980ea9ed = L.heatLayer(
+                [[41.905664, -87.63851700000002]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_76db6f3209be427aa3f511c4a9aff99a = L.heatLayer(
+                [[41.936669, -87.636794]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_722cc56dd672463c88fcf635769103b1 = L.heatLayer(
+                [[41.93588, -87.67841999999996]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_0afdfe06ea5e4d1caa57b3be3982274c = L.heatLayer(
+                [[41.92154, -87.653818]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_14e800653b5848b7bc0d72b3c0e37f43 = L.heatLayer(
+                [[41.93262, -87.642385]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_edbf4304c0fb4d4fb6d8d0828d231b7f = L.heatLayer(
+                [[41.86405900000001, -87.623727]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_019e36d715f04c74a13b6263499edff8 = L.heatLayer(
+                [[41.89576474564, -87.62590803270002]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_6e772a474438422882d768f2546c4ef9 = L.heatLayer(
+                [[41.897764, -87.642884]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_f716639d7c21440fbb127059aa7a9351 = L.heatLayer(
+                [[42.012342, -87.688243]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_292c60a5219e4a9583e5ba41ecaa3560 = L.heatLayer(
+                [[41.870816, -87.63124599999998]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_573426d6cb594c1683a126408ba9d201 = L.heatLayer(
+                [[41.913778, -87.64884]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_255ef2e33d554295b7c6b92f498e8830 = L.heatLayer(
+                [[42.019159, -87.673573]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_fd4273bb97ef4b0094086f498d430e70 = L.heatLayer(
+                [[41.895769, -87.67721999999998]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_b6dc10965e37496ab5e6bf24b99177b4 = L.heatLayer(
+                [[41.913688, -87.652855]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_047534890eaf41049bbcd580913aaeaf = L.heatLayer(
+                [[42.032562, -87.679101]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_1ce629c7d8dc4decaeb184d7e6f9ba39 = L.heatLayer(
+                [[41.918216, -87.656936]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_32d4e5bf3df049c1b9b9dc0f5066ec90 = L.heatLayer(
+                [[41.932595, -87.665939]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_3760eca4a1bd4f86a42b73df29de9ccd = L.heatLayer(
+                [[41.918084, -87.643749]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_3dbc9194b5964901aff3e2c694108552 = L.heatLayer(
+                [[41.94815, -87.66394]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_b3b552cb34bf4531b33b7c55fbb16fe9 = L.heatLayer(
+                [[41.94334, -87.67097]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_609eab0b3407493b9c11b9afaab3bd39 = L.heatLayer(
+                [[41.97561480459, -87.6794590387]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_c26da48d3f324111beda3509ec039785 = L.heatLayer(
+                [[41.954383, -87.648043]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_74f24e9f040f4531bc56caea07f05b30 = L.heatLayer(
+                [[41.965485, -87.657238]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_48cbf5854c8447d395f83368090d8745 = L.heatLayer(
+                [[41.886926, -87.65691899999999]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_5758789637944761bfdc4f2c5b8600c3 = L.heatLayer(
+                [[41.855136, -87.654127]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_2c6dcf102a524d838c6136c96d74aaf9 = L.heatLayer(
+                [[41.899643, -87.6677]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_7d9a4fe7492f4d888fe69deb589e6ab3 = L.heatLayer(
+                [[41.910522, -87.65310600000002]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_38c12113ce5f41aa863f0ec922a064c0 = L.heatLayer(
+                [[41.802406, -87.586924]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_df76bbb1932f4b45b16e71396db0146d = L.heatLayer(
+                [[41.88634906269, -87.6175165471]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_c68d642c386c4e9ca67c21e895ed21a0 = L.heatLayer(
+                [[41.88634906269, -87.6175165471]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_ad5261ef170e43d0a4e0a4da71591155 = L.heatLayer(
+                [[41.954383, -87.648043]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_d0500b1ffb9b4b43b7b7ab8d360e5cb3 = L.heatLayer(
+                [[41.888716036, -87.6444478533]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_e9eda6c43db14fb7bd6e51e94982efe9 = L.heatLayer(
+                [[41.92883, -87.66850699999998]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_29d7817e7a9a4394b97469b5579ee30c = L.heatLayer(
+                [[41.966555, -87.688487]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_cdc31e148f2142f08f1f4faaa4c88a6c = L.heatLayer(
+                [[41.913778, -87.64884]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_832bf37a510e4ba8a7093cbbfbf9bdfb = L.heatLayer(
+                [[41.893992, -87.62931800000001]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_35914ef377af4c93b54205468e5ecd81 = L.heatLayer(
+                [[41.961507, -87.671387]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_93b2505f37344369bd11e058c6d72cfc = L.heatLayer(
+                [[41.89841768945, -87.68659601639999]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_be8fb6298fd84631b92f049cfb129fe0 = L.heatLayer(
+                [[41.926277, -87.630834]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_bc9e147481564b539459aba8f048ffee = L.heatLayer(
+                [[41.936266, -87.652662]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_a79f6e8c78b543a5b3720e6df60ecac9 = L.heatLayer(
+                [[41.90068, -87.6626]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_028ef99180ae49ba8a261e5423672aec = L.heatLayer(
+                [[41.922167, -87.638888]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_be92a7bf1c664926b6e6bd14cc5e8acc = L.heatLayer(
+                [[41.842733, -87.635491]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_e4f8b55e5e9b4009a434ea1020199f62 = L.heatLayer(
+                [[41.89993001, -87.63443007]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_e06a88f584b64dbdbd9f4f939bbfffa2 = L.heatLayer(
+                [[41.929546, -87.643118]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_670c8404995e45b2aa7aac560fcc1e38 = L.heatLayer(
+                [[41.853605, -87.631886]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_94d552fab0cc4d9788ec8aca40547686 = L.heatLayer(
+                [[41.925905, -87.64926]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_59f826bf8352468eba8960db8ed35431 = L.heatLayer(
+                [[41.84910969176, -87.6951398068]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_fd71c0d0b8494c509c0fa2447fb61e42 = L.heatLayer(
+                [[41.874053, -87.627716]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_73d1b221595245808ab861a4b74168c7 = L.heatLayer(
+                [[41.93262, -87.642385]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_f0e75e7e81764a1e9a7250cbbabe4696 = L.heatLayer(
+                [[41.870816, -87.63124599999998]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_e526b639b67d4033845467e646c26ff7 = L.heatLayer(
+                [[41.967968, -87.650001]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_0c54846d1f644ebb9cd1b98110ab9a76 = L.heatLayer(
+                [[41.91844, -87.65222]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_66ad4f56b814461aaa9e872ce12c78b1 = L.heatLayer(
+                [[41.91844, -87.65222]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_6f94e8ed0e0b47ed80e5daa8432c9a4c = L.heatLayer(
+                [[41.910153, -87.68229000000002]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_53c18616d2544ddc8af3791afa16604b = L.heatLayer(
+                [[41.896362458, -87.65406127290001]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_c30e9209345744d59ade990562dda125 = L.heatLayer(
+                [[41.88283, -87.661206]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_9fc27ebec523442b8cbf0564dbdcc0ef = L.heatLayer(
+                [[41.893992, -87.62931800000001]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_e78bbdd126fe49c0b3b16e14aa2d4d89 = L.heatLayer(
+                [[41.838198, -87.645143]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_706afe2b712546beb86d0842e3cb1f8e = L.heatLayer(
+                [[41.893992, -87.62931800000001]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_10924b7cc0b84fa197e45a1878dd771e = L.heatLayer(
+                [[41.893992, -87.62931800000001]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_389223c7ff5142fb995b8919b58d4bc5 = L.heatLayer(
+                [[41.929143, -87.649077]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_1b04b74d1ed0419ab177fbc3ca93ef1f = L.heatLayer(
+                [[41.929546, -87.643118]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_c1cafaf35c82434b824a2b0afb82e8ab = L.heatLayer(
+                [[41.954245, -87.65440600000002]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_1c7101e8ce6d42bba46a63327a07e782 = L.heatLayer(
+                [[41.907655, -87.672552]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_1d0fb4d807aa45cfab4b1bbcc06570c4 = L.heatLayer(
+                [[41.89122, -87.67685999999998]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_4d3ab38739384949ae02639e20ef9d23 = L.heatLayer(
+                [[41.87429061424, -87.6672456361]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_b15a4de756b54956aa1bb5a7b9cf29ee = L.heatLayer(
+                [[41.95216219326, -87.69805111299999]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_ee752bc40e6f44e29c58f841ff7842f2 = L.heatLayer(
+                [[41.90230870122, -87.62769052799999]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_370c0aaa7c8f420882640987a5e4cc98 = L.heatLayer(
+                [[41.87207763285, -87.6295437729]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_610533038b2749c48ff27cd1d83a36bb = L.heatLayer(
+                [[41.871962, -87.62610600000002]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_26a37a3384884523b35cb290f30f61aa = L.heatLayer(
+                [[41.929143, -87.649077]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_3535ab3051934ce293c290c3252fb5f2 = L.heatLayer(
+                [[41.94367, -87.64895]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_62a8ec85089b44c9961824abbca8c41a = L.heatLayer(
+                [[41.871962, -87.62610600000002]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_0f5518285b0b4d5abeccf8f0d211b7fb = L.heatLayer(
+                [[41.929143, -87.649077]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_5afd8c0dc14e4b48b70458a98ae13dbc = L.heatLayer(
+                [[41.89637337, -87.66098386]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_e12b9b10a68f44c1803f0675de63613b = L.heatLayer(
+                [[41.89637337, -87.66098386]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_981fdc1acb7b4d259455e12cd303b588 = L.heatLayer(
+                [[41.94367, -87.64895]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_c556ce41addc4b7d8a26cda9347f42d9 = L.heatLayer(
+                [[41.85795, -87.640826]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_828b1857c02e4cd7943f8cb19ae91873 = L.heatLayer(
+                [[41.87151400000001, -87.669886]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_3a0e6962e98c404fb37c464e18dce7e7 = L.heatLayer(
+                [[41.799568, -87.594747]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_92f6f775d301400587b3dd8517d61ffd = L.heatLayer(
+                [[41.9256018819, -87.6537080423]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_db7041d060fe40de9fe6b523e7f4ed91 = L.heatLayer(
+                [[41.9256018819, -87.6537080423]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_1e3b1ba49c444cb6b4cb8e8c590683ac = L.heatLayer(
+                [[41.874337, -87.639566]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_163d0b91ea0d451182af05e820084789 = L.heatLayer(
+                [[41.924398819000004, -87.71544103549999]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_ebe42734b4cf46208fa561f9ff248f97 = L.heatLayer(
+                [[41.918306, -87.636282]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_9cea8fa8cff54fee8214168ebed4bf0a = L.heatLayer(
+                [[41.91021, -87.6435]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_47967e3f8c7343f0837603b797900fe8 = L.heatLayer(
+                [[41.9364968219, -87.64753865819998]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_c4ab55cc045a435ab1f8864ad117587e = L.heatLayer(
+                [[41.872596, -87.63350200000002]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_8eeafc22cc82467093b5b8e3bee8c525 = L.heatLayer(
+                [[41.90021949323, -87.6429854676]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_12d6ab0b40a54310ab4793368c274de2 = L.heatLayer(
+                [[41.957879, -87.649519]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_ddebd4aba1bf4998b54a82311e740023 = L.heatLayer(
+                [[41.968885, -87.684001]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_e5a5f43acfa2463a9649882ba8eca238 = L.heatLayer(
+                [[41.968885, -87.684001]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_895dcf0d46104fffa020324edbaea9a5 = L.heatLayer(
+                [[41.90096039, -87.62377664]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_c22933d5d13f4993a83da332fd27d1d7 = L.heatLayer(
+                [[41.79933626261, -87.6009581145]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_cc65ac927a104f8e824b7dcdb200521c = L.heatLayer(
+                [[41.894503, -87.61785400000002]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_35a0efc0f22141e887755689486516f9 = L.heatLayer(
+                [[41.932684, -87.63625]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_8a856b4251ad42c59a07a4b9c3280539 = L.heatLayer(
+                [[41.9364968219, -87.64753865819998]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_b722102dbb104e159a7ae46b2013c464 = L.heatLayer(
+                [[41.890755, -87.632009]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_5fe59077235647f293ca0961b1f28a78 = L.heatLayer(
+                [[41.890755, -87.632009]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_1533b0e514b0439aaf4b3a3389e5ff29 = L.heatLayer(
+                [[41.96709600000001, -87.667429]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_d6400a35787c4a2289a590fb6455866a = L.heatLayer(
+                [[41.911722, -87.626804]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_4d84017cbde04bdb87896387e6cff435 = L.heatLayer(
+                [[41.911722, -87.626804]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_9a62ba33ec11443c92d04c7a5a62f8c4 = L.heatLayer(
+                [[41.902893, -87.687275]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_9909b6fdb37949c3a84174fabcf0390f = L.heatLayer(
+                [[41.919936, -87.64883]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_161dba2adca24bf28ef3b073b6943947 = L.heatLayer(
+                [[41.928712, -87.65383299999998]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_03fb00d522294566b828c8076422dd5c = L.heatLayer(
+                [[41.836208, -87.61353299999998]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_5bcacd5039de4187acda1bbbea9fc178 = L.heatLayer(
+                [[41.902893, -87.687275]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_67a9ec9826de42848cf955e38f4da9c0 = L.heatLayer(
+                [[41.79949429373, -87.5864498959]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_4b4a4bda2e1c47e29205179fbbbd3383 = L.heatLayer(
+                [[41.961004, -87.649603]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_b98a0a86292e4626b612875bcc962bf3 = L.heatLayer(
+                [[41.867888, -87.623041]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_bd5da58225094f5bb641d670c5dd5fb5 = L.heatLayer(
+                [[42.015963, -87.675005]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_72aa3f94685746a9aff7ee1fa5fbd449 = L.heatLayer(
+                [[41.92533, -87.6658]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_65d5d04d5af24ee39cea8f3e148f1ab6 = L.heatLayer(
+                [[42.009074, -87.67419]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_cdf57a883d6e401cb388f7c1792fee11 = L.heatLayer(
+                [[41.891795, -87.658751]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_ae795c71fe004915993052995926600a = L.heatLayer(
+                [[41.90348607004, -87.6433534936]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_f4f27f41499c48f2996faa56cafcf986 = L.heatLayer(
+                [[41.86650148316, -87.68469707]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_9a229e7a1c6940ffb33ddcc9b960d8cc = L.heatLayer(
+                [[41.857813, -87.62455]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_5ce12d0d27e54c30bc5a5aa42ce9396c = L.heatLayer(
+                [[41.89227800000001, -87.612043]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_88baaac87e5b4b9aa678de451107fb47 = L.heatLayer(
+                [[41.888716036, -87.6444478533]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_11c41912cf304900b9e09075bd6fcf63 = L.heatLayer(
+                [[41.871737, -87.65103]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_2dcf032e98aa4a88afdf63b40573f450 = L.heatLayer(
+                [[41.918216, -87.656936]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_09737f42a7c4482497fd59805ef7ec53 = L.heatLayer(
+                [[41.919936, -87.64883]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+    
+            var heat_map_8c1b7f6133934aa2a922b6925905b415 = L.heatLayer(
+                [[41.89936843921, -87.64847987520002]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_c364995da60240bb8c8c318c1379757a);
+        
+</script>
